@@ -1,0 +1,7 @@
+<%= form_for @event do |f| %>
+
+ 	<%# new,edit 重複性程式碼改放到 _form.html.erb %>
+    <%= render :partial => 'form', :locals => { :f => f } %>
+
+    <%= f.submit "Update" %>
+<% end %>

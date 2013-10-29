@@ -1,0 +1,8 @@
+<%= @event.name %>
+<%# simple_format 是一種將\n換成br的 view helper %>
+<%= simple_format(@event.description) %>
+
+<%# 除錯專用 %>
+<%= debug(@event) %>
+
+<p><%= link_to 'Back to index', events_path %></p>
